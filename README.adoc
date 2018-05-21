@@ -1,0 +1,3 @@
+# Config 
+
+Completely useless configs. This is only to play with Spring Boot Configs git feature.
