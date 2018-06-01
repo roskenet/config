@@ -20,6 +20,11 @@ spring:
       client:
         instance:
           preferIp: true
+  sleuth:
+    sampler:
+      probability: 1
+  zipkin:
+    base-url: http://zipkin.default.svc.cluster.local:9411
 
 eureka:
   instance:
@@ -27,4 +32,3 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://discovery.default.svc.cluster.local:8761/eureka/
-
