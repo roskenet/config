@@ -1,0 +1,32 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  server:
+    port: 7979
+  metrics:
+    export:
+      statsd:
+        enabled: true  
+        flavor: telegraf  
+        host: http://telegraf.default.svc.cluster.local
+        port: 8125
+      influx:
+        uri: http://influxdb.default.svc.cluster.local:8086
+        db: helloworld
+
+spring:
+  boot:
+    admin:
+      client:
+        instance:
+          preferIp: true
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://discovery.default.svc.cluster.local:8761/eureka/
+
