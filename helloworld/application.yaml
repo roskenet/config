@@ -10,8 +10,6 @@ management:
       statsd:
         enabled: true  
         flavor: telegraf  
-        host: http://telegraf.default.svc.cluster.local
-        port: 8125
       influx:
         uri: http://influxdb.default.svc.cluster.local:8086
         db: helloworld
