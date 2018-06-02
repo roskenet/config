@@ -10,3 +10,10 @@ zuul:
     fallback:
       path: /**
       service-id: frontend
+
+spring:
+  sleuth:
+    sampler:
+      probability: 1
+  zipkin:
+    base-url: http://zipkin.default.svc.cluster.local:9411
