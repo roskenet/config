@@ -22,7 +22,7 @@ spring:
           preferIp: true
   sleuth:
     sampler:
-      probability: 1
+      probability: 0.1
   zipkin:
     base-url: http://zipkin.default.svc.cluster.local:9411
 
