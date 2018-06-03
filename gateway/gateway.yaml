@@ -9,7 +9,7 @@ zuul:
   routes:
     fallback:
       path: /**
-      service-id: frontend
+      url: http://frontend.default.svc.cluster.local/
 
 spring:
   sleuth:
