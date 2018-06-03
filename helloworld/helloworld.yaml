@@ -10,7 +10,10 @@ management:
       statsd:
         enabled: true  
         flavor: telegraf  
-        host: udp://telegraf.svc.default.cluster.local
+        host: udp://telegraf.default.svc.cluster.local
+      influx:
+        uri: http://influxdb.default.svc.cluster.local:8086
+        db: helloworld
 
 spring:
   boot:
