@@ -7,8 +7,8 @@ eureka:
 
 zuul:
   routes:
-    fallback:
-      path: /**
+    frontend:
+      path: /
       url: http://frontend.default.svc.cluster.local/
 
 spring:
