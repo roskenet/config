@@ -8,7 +8,7 @@ eureka:
 zuul:
   routes:
     greeter-app:
-      path: /greeter/**
+      path: /greeter-app/**
       url: http://greeter-app.default/
 
 proxy:
