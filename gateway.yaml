@@ -11,11 +11,6 @@ zuul:
       path: /greeter-app/**
       url: http://greeter-app.default/
 
-proxy:
-  auth:
-    routes:
-      greeter: oauth2
-
 spring:
   sleuth:
     sampler:
