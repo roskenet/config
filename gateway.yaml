@@ -9,7 +9,7 @@ zuul:
   routes:
     greeter-app:
       path: /**
-      url: http://greeter-app.default/
+      url: http://greeter-app.default
 
 spring:
   sleuth:
