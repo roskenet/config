@@ -10,6 +10,7 @@ zuul:
     greeter-app:
       path: /greeter-app/**
       url: http://greeter-app.default/
+      strip-prefix: false
 
 spring:
   sleuth:
