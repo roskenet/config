@@ -10,9 +10,6 @@ zuul:
     frontend:
       path: /
       url: http://frontend.default.svc.cluster.local/
-    keycloak:
-      path: /keycloak/**
-      url: http://keycloak.default:8080/
 
 spring:
   sleuth:
