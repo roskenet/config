@@ -7,9 +7,14 @@ eureka:
 
 zuul:
   routes:
-    frontend:
-      path: /
-      url: http://frontend.default.svc.cluster.local/
+    greeter-app:
+      path: /greeter/**
+      url: http://greeter-app.default/
+
+proxy:
+  auth:
+    routes:
+      greeter: oauth2
 
 spring:
   sleuth:
